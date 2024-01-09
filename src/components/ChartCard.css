@@ -1,0 +1,34 @@
+:root {
+  --scrollbarBG: #FBFCFD;
+  --thumbBG: #67e8f9;
+}
+
+.MuiCard-root>div {
+  height: 50svh;
+  height: 50vh;
+  overflow: scroll;
+  max-height: 470px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+.MuiCard-root>div::-webkit-scrollbar {
+  width: 11px;
+  height: 11px;
+}
+
+.MuiCard-root>div::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+  border-radius: 6px;
+}
+
+.MuiCard-root>div::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+.MuiCard-root svg {
+  width: 100%;
+  min-width: 520px;
+}
